@@ -1,0 +1,7 @@
+ansible-vault encrypt filename
+
+ansible-vault view filename
+
+ansible-vault decrypt filename
+
+ansible-vault create filename

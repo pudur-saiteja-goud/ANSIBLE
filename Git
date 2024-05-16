@@ -1,0 +1,13 @@
+---
+- hosts: dev
+  connection: ssh
+
+  tasks:
+    - name: git
+      yum : name=git state=present
+
+    - name: git repo
+      git:
+        repo: "https://github.com/pudur-saiteja-goud/one.git"
+        dest: "/root/ccit"
+        version: "master"

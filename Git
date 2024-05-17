@@ -11,3 +11,22 @@
         repo: "https://github.com/pudur-saiteja-goud/one.git"
         dest: "/root/ccit"
         version: "master"
+
+
+
+---------------------------------------------------------------------------------------
+
+# list dev envirnoment servers
+
+ansible dev --list-hosts
+
+ansible test --list-hosts
+
+# first l0 servers
+
+ansible dev[0:10] --list-hosts
+
+
+# last five servers
+
+ansible dev[-5] --list-hosts
